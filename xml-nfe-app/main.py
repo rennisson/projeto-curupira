@@ -272,8 +272,6 @@ if __name__ == '__main__':
             dest_location = get_coordinates_from_cep(cep_dest)
             print(f'\tTotal de NFs emitidas: 743')
             print(f'\tCom base na distancia total percorrida, de acordo com as NFs processadas,\n\to produtor deixou de emitir 105kg de CO2 por ano\n')
- 
-            # print(f'Destino: CNPJ {end_dest}')
 
             distance_result = distance(emit_location, dest_location)
 
@@ -285,4 +283,5 @@ if __name__ == '__main__':
             # else:
             #     print("Não foi possível calcular a distância.\n")
 
+            # Arquivo CSV que será armazenado no banco de dados NoSQL
             df.to_csv(file_path.replace("xml", "csv").replace("nfe", "convert"), sep=";", encoding="utf8", index=False)
