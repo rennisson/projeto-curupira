@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+  <infNFe versao="4.00" Id="NFe35180312345678000100550010000000011000000011">
+    <ide>
+      <cUF>35</cUF> <!-- Código da UF do emissor -->
+      <cNF>12345678</cNF> <!-- Código numérico -->
+      <natOp>Venda de mercadoria</natOp> <!-- Natureza da operação -->
+      <mod>55</mod> <!-- Modelo da NF-e (55 para NF-e) -->
+      <serie>1</serie> <!-- Série da NF-e -->
+      <nNF>100</nNF> <!-- Número da NF-e -->
+      <dhEmi>2024-11-09T10:30:00-03:00</dhEmi> <!-- Data e hora de emissão -->
+      <tpNF>1</tpNF> <!-- Tipo da NF-e (1 = Saída, 0 = Entrada) -->
+      <idDest>1</idDest> <!-- Identificador de destino (1 = operação interna) -->
+      <cMunFG>3550308</cMunFG> <!-- Código do município de emissão -->
+      <tpImp>1</tpImp> <!-- Tipo de impressão do DANFE -->
+      <tpEmis>1</tpEmis> <!-- Tipo de emissão (1 = Normal) -->
+      <cDV>0</cDV> <!-- Dígito verificador da chave de acesso -->
+      <tpAmb>2</tpAmb> <!-- Ambiente (1 = Produção, 2 = Homologação) -->
+      <finNFe>1</finNFe> <!-- Finalidade da emissão (1 = Normal) -->
+      <indFinal>1</indFinal> <!-- Consumidor final (1 = Sim, 0 = Não) -->
+      <indPres>1</indPres> <!-- Presença do comprador (1 = Operação presencial) -->
+      <procEmi>0</procEmi> <!-- Processo de emissão (0 = Aplicativo do contribuinte) -->
+      <verProc>1.0</verProc> <!-- Versão do processo de emissão -->
+    </ide>
+    <emit>
+      <CNPJ>34567890000109</CNPJ> <!-- CNPJ do emitente -->
+      <xNome>Comércio do Norte LTDA</xNome>
+      <xFant>Emissor</xFant>
+      <enderEmit>
+        <xLgr>Rua das Empresas</xLgr>
+        <nro>123</nro>
+        <xBairro>Centro</xBairro>
+        <cMun>3550308</cMun>
+        <xMun>Manaus</xMun>
+        <UF>AM</UF>
+        <CEP>69005070</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>1122334455</fone>
+      </enderEmit>
+      <IE>1234567890</IE> <!-- Inscrição Estadual -->
+      <CRT>3</CRT> <!-- Código de Regime Tributário -->
+    </emit>
+    <dest>
+      <CNPJ>54789012000161</CNPJ> <!-- CNPJ do destinatário -->
+      <xNome>Distribuidora do Nordeste LTDA</xNome>
+      <enderDest>
+        <xLgr>Avenida dos Clientes</xLgr>
+        <nro>456</nro>
+        <xBairro>Comercial</xBairro>
+        <cMun>3550308</cMun>
+        <xMun>Salvador</xMun>
+        <UF>BA</UF>
+        <CEP>40010000</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>11987654321</fone>
+      </enderDest>
+      <indIEDest>1</indIEDest> <!-- Indicador da IE do destinatário (1 = Contribuinte) -->
+      <IE>9876543210</IE> <!-- Inscrição Estadual do destinatário -->
+    </dest>
+    <det nItem="1">
+      <prod>
+        <cProd>12345</cProd> <!-- Código do produto -->
+        <cEAN>7891234567895</cEAN> <!-- Código EAN do produto -->
+        <xProd>Produto Exemplo</xProd>
+        <NCM>12345678</NCM> <!-- Código NCM -->
+        <CFOP>5102</CFOP> <!-- Código CFOP -->
+        <uCom>UN</uCom> <!-- Unidade de comercialização -->
+        <qCom>10.0000</qCom> <!-- Quantidade comercializada -->
+        <vUnCom>5.00</vUnCom> <!-- Valor unitário de comercialização -->
+        <vProd>50.00</vProd> <!-- Valor total dos produtos -->
+        <cEANTrib>7891234567895</cEANTrib> <!-- Código EAN tributável -->
+        <uTrib>UN</uTrib> <!-- Unidade tributável -->
+        <qTrib>10.0000</qTrib> <!-- Quantidade tributável -->
+        <vUnTrib>5.00</vUnTrib> <!-- Valor unitário tributável -->
+        <indTot>1</indTot> <!-- Indica se o valor do item compõe o valor total da NF-e -->
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS00>
+            <orig>0</orig> <!-- Origem da mercadoria (0 = Nacional) -->
+            <CST>00</CST> <!-- Código de Situação Tributária -->
+            <modBC>3</modBC> <!-- Modalidade de determinação da BC -->
+            <vBC>50.00</vBC> <!-- Base de cálculo do ICMS -->
+            <pICMS>18.00</pICMS> <!-- Alíquota do ICMS -->
+            <vICMS>9.00</vICMS> <!-- Valor do ICMS -->
+          </ICMS00>
+        </ICMS>
+      </imposto>
+    </det>
+    <total>
+      <ICMSTot>
+        <vBC>50.00</vBC> <!-- Base de cálculo do ICMS total -->
+        <vICMS>9.00</vICMS> <!-- Valor total do ICMS -->
+        <vProd>50.00</vProd> <!-- Valor total dos produtos -->
+        <vNF>50.00</vNF> <!-- Valor total da nota fiscal -->
+      </ICMSTot>
+    </total>
+  </infNFe>
+</NFe>
